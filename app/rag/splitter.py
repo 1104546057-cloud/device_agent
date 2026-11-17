@@ -34,14 +34,3 @@ def splitter_text(
 
     return chunks
 
-if __name__ == "__main__":
-    sample_text = "abcdefghijk"
-    chunks = splitter_text(
-        sample_text,
-        chunk_size = 4,
-        overlap = 1,
-        source = "sample_source"
-    )
-
-    for chunk in chunks:
-        print(chunk)
